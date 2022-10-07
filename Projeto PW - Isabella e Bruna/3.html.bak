@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Ínicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="1.html">Cardápio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="2.html">Combos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="3.html">Sobre Nós</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="about-section">
+  <h1>Sobre Nós</h1>
+  <p>Eu e Bruna criamos esse site da "Heroes Coffe" porque nós duas amamos café e eu (bella) amo heróis!</p>
+  <p>Esperamos que você tenha gostado do nosso café e do nosso site <3</p>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="imagens/bella.jpeg" alt="Bella" style="width:100%">
+      <div class="container">
+        <h2>Isabella Dos Anjos</h2>
+        <p class="title">CEO & Fundadora</p>
+        <p>Olá! Tenho 15 anos. Gosto de café, filmes, séries e programar.</p>
+        <p>isabella.celici@etec.sp.gov.br</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="imagens/bruna.jpeg" alt="Bruna" style="width:100%">
+      <div class="container">
+        <h2>Bruna Beatriz</h2>
+        <p class="title">Designer & Art Director</p>
+        <p>Hey! Tenho 15 anos, amo desenhar e animais fofos :)</p>
+        <p>bruna.medeiros37@etec.sp.gov.br</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <a href="index.html"> <img src="imagens/voltar.png" width="200px" height="105px" >
+</body>
+</html>
